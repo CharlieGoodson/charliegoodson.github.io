@@ -1,0 +1,182 @@
+/* подключение файлов шрифтов с google fonts */
+@import 'https://fonts.googleapis.com/css?family=Abel|Open+Sans:300,400,600,700,800';
+
+/* сброс стилей браузера */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* начало основной таблицы стилей*/
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	background: #fff url(../img/bg.png) no-repeat;
+	background-position: top center;
+
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* стили для внешнего контейнера */
+.container {
+	width: 966px;
+	margin: 0 auto;
+}
+
+/* стили для хедера */
+header {
+	background: url(../img/camera.png) no-repeat;
+	background-position: 108px 16px;
+}
+header h1 {
+	font-family: 'Abel', sans-serif;
+	font-weight: normal;
+	font-size: 72px;
+	text-align: center;
+	padding-top: 38px;
+	padding-bottom: 0px;
+	text-shadow: 2px 2px 5px #aaa;
+	padding-left: 72px;
+}
+header p {
+	text-align: center;
+	font-size: 12px;
+	margin-top: -8px;
+	padding-bottom: 35px;
+	padding-left: 72px;
+}
+header h1 span {
+	/*color: #fa5a83;*/
+	color: #e47722;
+}
+header nav {
+	margin-left: 2px;
+	margin-right: 2px;
+	text-align: center;
+	padding-bottom: 2px;
+}
+header ul {
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 1px;
+	padding-bottom: 10px;
+}
+header ul li {
+	display: inline;
+}
+header ul a:hover {
+	text-decoration: underline;	
+}
+
+/* стили для секции с плитками фото */
+section div {
+	position: relative;
+	float: left;
+	background-color: orange;
+	width: 318px;
+	height: 212px;
+	margin: 2px;
+}
+section div.main-folio {
+	width: 640px;
+	height: 428px;
+}
+section div.cover {
+	position: absolute;
+	text-align: center;
+	font-size: 15px;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: #333;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+section div.cover:hover {
+	opacity: 0.9;
+}
+.cover a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 80px;
+	color: #ddd;
+}
+.main-folio .cover a {
+	padding-top: 200px;
+}
+.cover span {
+	font-weight: 700;
+}	
+/* стили для галлерей */
+section.gallery {
+	padding-top: 21px;
+	text-align: center;
+}
+section.gallery h2 {
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 6px;
+}
+section.gallery p {
+	font-size: 15px;
+	padding-bottom: 12px;
+}
+section.gallery img {
+	margin: 2px 0 2px 0;
+	max-width: 900px;
+}
+
+/* стили для футера */
+footer {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 2px;
+	clear: both;
+}
+footer ul {
+	font-size: 0;
+	padding-top: 10px;
+	padding-bottom: 3px;
+
+}
+footer ul li {
+	display: inline-block;
+	padding: 2px 4px 6px 4px;
+}
+footer ul a {
+	display: block;
+	font-size: 0;
+	width: 45px;
+	height: 45px;
+	background-image: url(../img/social_icons.png);
+}
+footer a.fb {
+	background-position: -2px -1px;
+}
+footer a.ytb {
+	background-position: -56px -1px;
+}
+footer a.vk {
+	background-position: -111px -1px;
+}
+footer a.inst {
+	background-position: -166px -1px;
+}
+footer p {
+	text-align: center;
+	font-size: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+footer p a:hover {
+	text-decoration: underline;
+}
